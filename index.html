@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Scramble Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      rel="icon"
+      href="img/NYCS-bull-trans-T.svg.png"
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of font link -->
+  </head>
+  <body>
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="startdiv">
+      <button class="startbutton">Start</button>
+      <h4>Chose your level</h4>
+      <div class="level">
+        <button class="good active">Easy</button>
+        <button class="normal">Normal</button>
+        <button class="exc">Hard</button>
+      </div>
+    </div>
+    <div class="scramble-Game">
+      <div class="container">
+        <div class="header">
+          <div class="nameGame">Word Scramble Game</div>
+          <div class="score">
+            Score : <span class="theScore">0</span> from
+            <span class="scoreFrom">44</span>
+          </div>
+        </div>
+        <div class="text">
+          <div class="randomWord">Write me</div>
+          <p class="timeout">
+            Time Left : <span class="thetime">10</span> Seconds
+          </p>
+        </div>
+        <div class="input">
+          <input type="text" placeholder="Enter the word" id="input" disabled />
+        </div>
+        <div class="button">
+          <button class="letGo">Let's Go</button>
+          <button onclick="again()" class="try-again">Try again</button>
+        </div>
+        <div class="result">
+          <span class="scoreEvaluation">Excellent work</span> , Your Score is :
+          <span class="theReScore">0</span>
+          <h4>Don't Give Up 💪</h4>
+        </div>
+      </div>
+    </div>
+    <div class="theEnd none">
+      <div class="h1-text">
+        <h1>Excellent Work 💪😎</h1>
+        <h2>Thank you.. I hope you liked the game</h2>
+      </div>
+      <p>follow me if you want more</p>
+      <div class="icons">
+        <a href="https://www.instagram.com/abdallahmrayati/">
+          <i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/abod.abod.1447/">
+          <i class="fa-brands fa-facebook"></i
+        ></a>
+        <a
+          href="abdullah.myt412@gmail.com
+        "
+        >
+          <i class="fa-solid fa-envelope"></i
+        ></a>
+        <a
+          href="https://twitter.com/AbdullahMyt412?t=PWgcM1GwWsvbGO5hOtSlzQ&s=09"
+        >
+          <i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/abdullah-marayati-295771242/">
+          <i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </div>
+    <audio id="audio" controls style="display: none">
+      <source src="Wood Plank Flicks.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script src="mian.js"></script>
+  </body>
+</html>
